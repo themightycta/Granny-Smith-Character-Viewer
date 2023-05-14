@@ -1,0 +1,56 @@
+<character texture="silly.png" scale="5.0">
+	<parts>
+		<part name="torso" parent="" 							min="10 200"	max="84 308" 	pivot="48 219" 	attach="0 0" 		angles="0 0"/>
+		<part name="front_leg_upper" parent="torso" 			min="229 200" 	max="264 250" 	pivot="246 217"	attach="37 294"		angles="-0.5 2"/>
+		<part name="front_leg_lower" parent="front_leg_upper" 	min="275 200" 	max="293 237" 	pivot="285 208" attach="253 240"	angles="-2.5 0"/>
+		<part name="front_foot" parent="front_leg_lower" 		min="304 200"	max="340 225" 	pivot="315 209" attach="284 231"	angles="-1 1"/>	
+		<part name="back_leg_upper" parent="torso" 				min="351 200" 	max="386 250" 	pivot="368 217" attach="62 294"		angles="-0.5 2"/>
+		<part name="back_leg_lower" parent="back_leg_upper" 	min="397 200" 	max="415 237" 	pivot="407 208" attach="375 240"	angles="-2.5 0"/>
+		<part name="back_foot" parent="back_leg_lower" 			min="426 200"	max="462 225" 	pivot="438 209" attach="407 231"	angles="-1 1"/>	
+		<part name="front_arm_upper" parent="torso" 			min="95 200" 	max="116 241" 	pivot="104 212" attach="43 232" 	angles="-10 10"/>
+		<part name="front_arm_lower" parent="front_arm_upper" 	min="127 200" 	max="151 254" 	pivot="135 208" attach="109 233"	angles="0 3"/>
+		<part name="back_arm_upper" parent="torso" 				min="162 200" 	max="183 241" 	pivot="171 212" attach="63 232"		angles="-10 10"/>
+		<part name="back_arm_lower" parent="back_arm_upper" 	min="194 200" 	max="218 254" 	pivot="202 208" attach="175 233"	angles="0 3"/>
+		<part name="cane" parent="front_arm_lower" 				min="473 200"	max="498 297" 	pivot="484 275"	attach="145 243"	angles="-1 1"/>
+		<part name="head" parent="torso" 						min="10 10" 	max="99 94" 	pivot="29 82"	attach="67 205"	angles="-1 1"/>
+	</parts>
+
+	<face name="idle" min="10 10" max="99 94"/>
+	<face name="afraid" min="110 10" max="199 94"/>
+	<face name="blink" min="210 10" max="299 94"/>
+	<face name="oops" min="310 10" max="399 94"/>
+	<face name="fly" min="410 10" max="499 94"/>
+	<face name="win" min="10 104" max="99 187"/>
+	<face name="crash" min="110 104" max="199 187"/>
+	<face name="loose" min="210 104" max="299 187"/>
+
+	<helmet name="front" min="310 104" max="399 187"/>
+	<helmet name="back" min="410 104" max="499 187"/>
+
+	<shadow min="157 329" max="220 392"/>
+
+	<cloth name="tail" min="10 329" max="70 369"/>
+	<cloth name="tongue" min="126 329" max="146 402"/> 
+	<cloth name="ear" min="81 329" max="115 395"/>
+
+	<order>
+		<part name="back_leg_lower"/>
+		<part name="back_foot"/>
+		<part name="back_leg_upper"/>
+		<part name="back_arm_upper"/>
+		<part name="back_arm_lower"/>
+		<part name="torso"/>
+		<cloth name="tail"/>
+		<part name="front_leg_lower"/>
+		<part name="front_foot"/>
+		<part name="front_leg_upper"/>
+		<helmet name="back"/>
+		<part name="head"/>
+		<helmet name="front"/>
+		<cloth name="ear"/>
+		<part name="cane"/>
+		<part name="front_arm_upper"/>
+		<part name="front_arm_lower"/>
+	</order>
+</character>
+
